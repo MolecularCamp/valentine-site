@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Be My Valentine 💘</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" src="assets/song.mp3"></audio>
+
+  <!-- PHASE 1: PROPOSAL -->
+  <div id="proposalScreen" class="screen">
+    <h1 class="title">Will you be my Valentine? 💖</h1>
+
+    <div class="buttons">
+      <button id="yesBtn">YES 💘</button>
+      <button id="noBtn">NO 🙄</button>
+    </div>
+  </div>
+
+  <!-- PHASE 2: DREAMY SLIDESHOW -->
+  <div id="slideshowScreen" class="screen hidden">
+    <div id="slidesContainer"></div>
+
+    <div class="nav">
+      <button onclick="prevSlide()">⬅</button>
+      <button onclick="nextSlide()">➡</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
